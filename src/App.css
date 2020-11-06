@@ -1,3 +1,6 @@
+.miBody{
+  background: #dedede;
+}
 .App {
   text-align: center;
 }
@@ -6,7 +9,60 @@
   height: 40vmin;
   pointer-events: none;
 }
+.container{
+  background-color: white;
+}
 
+.headerPokemon{
+  height: 500px;
+  width: 100%;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 68%;
+  background-position: center 80px;
+}
+.loadingOk{
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #6f4108ed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+.titpikapika{
+  background: #2774ba;
+  color: white;
+  padding: 15px;
+}
+.spinOk{
+  position: fixed;
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px !important;
+  height: 100px !important;
+}
+.form-inline{
+  justify-content: center;
+  max-width: 600px;
+  background: #2774ba;
+  margin: auto;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+}
+.titOk{
+  color: #ffcc01;
+}
+
+.results {
+  border: solid 3px #c8a102;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +91,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.footerMenuNav ul, .menu ul {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.footerMenuNav ul li, .menu ul li {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.footerMenuNav ul li a, .menu ul li a {
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+.menu ul li:hover{
+  background-color: #24b0f1;
 }
